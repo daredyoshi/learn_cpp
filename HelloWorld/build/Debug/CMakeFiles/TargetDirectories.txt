@@ -1,0 +1,7 @@
+/media/dev/learn_cpp/HelloWorld/build/Debug/CMakeFiles/edit_cache.dir
+/media/dev/learn_cpp/HelloWorld/build/Debug/CMakeFiles/EnterNumber.dir
+/media/dev/learn_cpp/HelloWorld/build/Debug/CMakeFiles/rebuild_cache.dir
+/media/dev/learn_cpp/HelloWorld/build/Debug/CMakeFiles/HelloWorld.dir
+/media/dev/learn_cpp/HelloWorld/build/Debug/lib/interp/CMakeFiles/rebuild_cache.dir
+/media/dev/learn_cpp/HelloWorld/build/Debug/lib/interp/CMakeFiles/edit_cache.dir
+/media/dev/learn_cpp/HelloWorld/build/Debug/lib/interp/CMakeFiles/interp.dir

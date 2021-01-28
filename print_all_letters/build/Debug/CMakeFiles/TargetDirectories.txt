@@ -1,0 +1,3 @@
+/media/dev/learn_cpp/print_all_letters/build/Debug/CMakeFiles/rebuild_cache.dir
+/media/dev/learn_cpp/print_all_letters/build/Debug/CMakeFiles/edit_cache.dir
+/media/dev/learn_cpp/print_all_letters/build/Debug/CMakeFiles/print_all_letters.dir

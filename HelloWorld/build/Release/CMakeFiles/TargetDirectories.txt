@@ -1,0 +1,6 @@
+/media/dev/learn_cpp/HelloWorld/build/Release/CMakeFiles/edit_cache.dir
+/media/dev/learn_cpp/HelloWorld/build/Release/CMakeFiles/rebuild_cache.dir
+/media/dev/learn_cpp/HelloWorld/build/Release/CMakeFiles/HelloWorld.dir
+/media/dev/learn_cpp/HelloWorld/build/Release/lib/interp/CMakeFiles/rebuild_cache.dir
+/media/dev/learn_cpp/HelloWorld/build/Release/lib/interp/CMakeFiles/edit_cache.dir
+/media/dev/learn_cpp/HelloWorld/build/Release/lib/interp/CMakeFiles/interp.dir

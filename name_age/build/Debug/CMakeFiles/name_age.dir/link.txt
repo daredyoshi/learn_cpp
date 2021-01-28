@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/name_age.dir/src/HelloWorld.cpp.o -o ../../bin/Debug/name_age 

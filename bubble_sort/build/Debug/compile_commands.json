@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/media/dev/learn_cpp/bubble_sort/build/Debug",
+  "command": "/usr/bin/c++  -I/media/dev/learn_cpp/bubble_sort/include -g -Wall -Werror -Wunused -Wextra -Wshadow -Wformat=2 -pedantic-errors -std=c++17 -o CMakeFiles/bubble_sort.dir/src/BubbleSort.cpp.o -c /media/dev/learn_cpp/bubble_sort/src/BubbleSort.cpp",
+  "file": "/media/dev/learn_cpp/bubble_sort/src/BubbleSort.cpp"
+}
+]

@@ -1,0 +1,3 @@
+/media/dev/learn_cpp/name_age/build/Debug/CMakeFiles/edit_cache.dir
+/media/dev/learn_cpp/name_age/build/Debug/CMakeFiles/rebuild_cache.dir
+/media/dev/learn_cpp/name_age/build/Debug/CMakeFiles/name_age.dir

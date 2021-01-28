@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/media/dev/learn_cpp/random_monster/build/Debug",
+  "command": "/usr/bin/c++  -I/media/dev/learn_cpp/random_monster/include -g -Wall -Werror -Wunused -Wextra -Wshadow -Wformat=2 -pedantic-errors -std=c++17 -o CMakeFiles/random_monster.dir/src/RandomMonster.cpp.o -c /media/dev/learn_cpp/random_monster/src/RandomMonster.cpp",
+  "file": "/media/dev/learn_cpp/random_monster/src/RandomMonster.cpp"
+}
+]

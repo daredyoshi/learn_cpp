@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/media/dev/learn_cpp/HelloWorld/build/Debug",
+  "command": "/usr/bin/c++   -g -Wall -Werror -Wunused -Wextra -Wshadow -Wformat=2 -pedantic-errors -std=c++17 -o CMakeFiles/EnterNumber.dir/src/EnterNumber.cpp.o -c /media/dev/learn_cpp/HelloWorld/src/EnterNumber.cpp",
+  "file": "/media/dev/learn_cpp/HelloWorld/src/EnterNumber.cpp"
+},
+{
+  "directory": "/media/dev/learn_cpp/HelloWorld/build/Debug",
+  "command": "/usr/bin/c++  -I/media/dev/learn_cpp/HelloWorld/include -I/media/dev/learn_cpp/HelloWorld/lib/interp -g -Wall -Werror -Wunused -Wextra -Wshadow -Wformat=2 -pedantic-errors -std=c++17 -o CMakeFiles/HelloWorld.dir/src/HelloWorld.cpp.o -c /media/dev/learn_cpp/HelloWorld/src/HelloWorld.cpp",
+  "file": "/media/dev/learn_cpp/HelloWorld/src/HelloWorld.cpp"
+},
+{
+  "directory": "/media/dev/learn_cpp/HelloWorld/build/Debug/lib/interp",
+  "command": "/usr/bin/c++ -Dinterp_EXPORTS  -g -fPIC -o CMakeFiles/interp.dir/interpolate.cpp.o -c /media/dev/learn_cpp/HelloWorld/lib/interp/interpolate.cpp",
+  "file": "/media/dev/learn_cpp/HelloWorld/lib/interp/interpolate.cpp"
+}
+]

@@ -1,0 +1,3 @@
+/media/dev/learn_cpp/fraction/build/Debug/CMakeFiles/rebuild_cache.dir
+/media/dev/learn_cpp/fraction/build/Debug/CMakeFiles/edit_cache.dir
+/media/dev/learn_cpp/fraction/build/Debug/CMakeFiles/fraction.dir

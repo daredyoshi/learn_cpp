@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../../include/constants.h
+
+/media/dev/learn_cpp/falling_ball/src/main.cpp
+iostream
+-
+constants.h
+/media/dev/learn_cpp/falling_ball/src/constants.h
+

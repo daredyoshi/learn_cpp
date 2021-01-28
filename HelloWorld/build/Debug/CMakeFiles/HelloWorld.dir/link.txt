@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/HelloWorld.dir/src/HelloWorld.cpp.o -o ../../bin/Debug/HelloWorld  -Wl,-rpath,/media/dev/learn_cpp/HelloWorld/build/Debug/lib/interp lib/interp/libinterp.so 

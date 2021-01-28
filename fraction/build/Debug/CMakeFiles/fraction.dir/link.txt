@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/fraction.dir/src/HelloWorld.cpp.o -o ../../bin/Debug/fraction 

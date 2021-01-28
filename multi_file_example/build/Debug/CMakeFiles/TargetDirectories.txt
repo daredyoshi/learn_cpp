@@ -1,0 +1,3 @@
+/media/dev/learn_cpp/multi_file_example/build/Debug/CMakeFiles/edit_cache.dir
+/media/dev/learn_cpp/multi_file_example/build/Debug/CMakeFiles/rebuild_cache.dir
+/media/dev/learn_cpp/multi_file_example/build/Debug/CMakeFiles/HelloWorld.dir

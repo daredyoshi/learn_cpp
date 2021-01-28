@@ -1,0 +1,3 @@
+/media/dev/learn_cpp/bubble_sort/build/Debug/CMakeFiles/rebuild_cache.dir
+/media/dev/learn_cpp/bubble_sort/build/Debug/CMakeFiles/edit_cache.dir
+/media/dev/learn_cpp/bubble_sort/build/Debug/CMakeFiles/bubble_sort.dir

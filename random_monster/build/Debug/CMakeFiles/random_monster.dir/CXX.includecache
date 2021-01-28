@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/media/dev/learn_cpp/random_monster/src/RandomMonster.cpp
+ios
+-
+iostream
+-
+string
+-
+limits
+-
+ctime
+-
+random
+-
+

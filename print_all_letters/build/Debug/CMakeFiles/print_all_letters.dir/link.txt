@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/print_all_letters.dir/src/HelloWorld.cpp.o -o ../../bin/Debug/print_all_letters 

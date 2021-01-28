@@ -1,0 +1,3 @@
+/media/dev/learn_cpp/falling_ball/build/Debug/CMakeFiles/rebuild_cache.dir
+/media/dev/learn_cpp/falling_ball/build/Debug/CMakeFiles/edit_cache.dir
+/media/dev/learn_cpp/falling_ball/build/Debug/CMakeFiles/falling_ball.dir

@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../../include/Config.h
+
+../../lib/interp/interpolate.h
+cmath
+-
+
+/media/dev/learn_cpp/HelloWorld/src/HelloWorld.cpp
+cstdio
+-
+Config.h
+/media/dev/learn_cpp/HelloWorld/src/Config.h
+cstdlib
+-
+ios
+-
+ostream
+-
+string
+-
+vector
+-
+iostream
+-
+interpolate.h
+/media/dev/learn_cpp/HelloWorld/src/interpolate.h
+array
+-
+tuple
+-
+type_traits
+-
+string_view
+-
+
