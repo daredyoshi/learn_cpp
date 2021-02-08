@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -shared -Wl,-soname,libPoint3d.so -o libPoint3d.so CMakeFiles/Point3d.dir/Point3d.cpp.o 

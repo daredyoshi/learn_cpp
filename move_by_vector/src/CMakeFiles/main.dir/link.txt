@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/main.dir/main.cpp.o -o main  -Wl,-rpath,/media/dev/learn_cpp/move_by_vector/src/math math/libPoint3d.so math/libVector3d.so 

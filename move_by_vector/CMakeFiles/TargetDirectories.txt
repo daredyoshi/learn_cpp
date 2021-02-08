@@ -1,0 +1,9 @@
+/media/dev/learn_cpp/move_by_vector/CMakeFiles/rebuild_cache.dir
+/media/dev/learn_cpp/move_by_vector/CMakeFiles/edit_cache.dir
+/media/dev/learn_cpp/move_by_vector/src/CMakeFiles/rebuild_cache.dir
+/media/dev/learn_cpp/move_by_vector/src/CMakeFiles/edit_cache.dir
+/media/dev/learn_cpp/move_by_vector/src/CMakeFiles/main.dir
+/media/dev/learn_cpp/move_by_vector/src/math/CMakeFiles/rebuild_cache.dir
+/media/dev/learn_cpp/move_by_vector/src/math/CMakeFiles/Vector3d.dir
+/media/dev/learn_cpp/move_by_vector/src/math/CMakeFiles/edit_cache.dir
+/media/dev/learn_cpp/move_by_vector/src/math/CMakeFiles/Point3d.dir
