@@ -1,5 +1,6 @@
 #include <ios>
 #include <iostream>
+#include <istream>
 #include <string>
 #include <limits>
 
@@ -8,7 +9,7 @@ private:
     int m_numerator{0};
     int m_deonominator{0};
 public:
-    Fraction(int n, int d):
+    Fraction(int n=0, int d=0):
         m_numerator{n}, m_deonominator{d} {
             // this will automatically be called by operators
             // that are overloaded because they return a new
@@ -36,6 +37,8 @@ public:
     friend Fraction operator*(const Fraction &f1, const Fraction &f2);
     friend Fraction operator*(const Fraction &f1, const int i);
     friend Fraction operator*(const int i,const Fraction &f1);
+    friend std::ostream& operator<< (std::ostream &out, const Fraction &fraction);
+    friend std::istream& operator>> (std::istream &in, Fraction &fraction);
 };
 
 // learning how to overload operators using the friend function
@@ -62,25 +65,29 @@ Fraction operator*(const int i,const Fraction &f1){
     };
 }
 
+std::ostream& operator<< (std::ostream &out, const Fraction &fraction){
+    out << fraction.m_numerator << "/" << fraction.m_deonominator;
+    return out;
+}
+
+std::istream& operator>> (std::istream &in, Fraction &fraction){
+    in >> fraction.m_numerator;
+    in >> fraction.m_deonominator;
+
+    return in;
+}
+
 int main()
 {
-    Fraction f1{2, 5};
-    f1.print();
+    Fraction f1{};
+	std::cout << "Enter fraction 1: ";
+	std::cin >> f1;
  
-    Fraction f2{3, 8};
-    f2.print();
+	Fraction f2{};
+	std::cout << "Enter fraction 2: ";
+	std::cin >> f2;
  
-    Fraction f3{ f1 * f2 };
-    f3.print();
- 
-    Fraction f4{ f1 * 2 };
-    f4.print();
- 
-    Fraction f5{ 2 * f2 };
-    f5.print();
- 
-    Fraction f6{ Fraction{1, 2} * Fraction{2, 3} * Fraction{3, 4} };
-    f6.print();
+	std::cout << f1 << " * " << f2 << " is " << f1 * f2 << '\n'; // note: The result of f1 * f2 is an r-value
   
     return 0;
 }
