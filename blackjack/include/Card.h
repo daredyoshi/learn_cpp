@@ -48,7 +48,7 @@ public:
     }
 
     void print () const;
-    unsigned short value () const;
+    unsigned char value () const;
 
 };
 
