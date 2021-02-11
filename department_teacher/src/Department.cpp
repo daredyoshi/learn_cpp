@@ -1,8 +1,11 @@
 #include "Department.h"
 
 std::ostream& operator<<(std::ostream &out, const Department &department){
-    for(Teacher &teacher : department.m_teachers){
-        std::cout << teacher.getName();
+    out << "Department: ";
+    for(const auto &teacher : department.m_teachers){
+        std::cout << teacher.get().getName() << ' ';
     }
+    out << '\n';
+    
     return out;
 }
