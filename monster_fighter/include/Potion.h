@@ -23,7 +23,7 @@ public:
         : m_type{type} {}; 
 
     int getSize() const;
-    std::string getSizeLabel() const;
+    std::string_view getSizeLabel() const;
     void drinkPotion(Player &player) const;
 };
 

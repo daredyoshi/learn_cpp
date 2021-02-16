@@ -5,13 +5,13 @@
 class IntArray
 {
 private:
-	int m_length{};
-	int *m_data{};
+	uint m_length{0};
+	int *m_data{nullptr};
  
 public:
 	IntArray() = default;
  
-	IntArray(int length) :
+	IntArray(uint length) :
 		m_length{ length },
 		m_data{ new int[length]{} }
 	{
@@ -32,13 +32,14 @@ public:
  
 	~IntArray()
 	{
-		delete[] m_data;
+        if(m_data)
+    		delete[] m_data;
 		// we don't need to set m_data to null or m_length to 0 here, since the object will be destroyed immediately after this function anyway
 	}
  
 	IntArray(const IntArray&) = delete; // to avoid shallow copies
  
-	int& operator[](int index)
+	int& operator[](uint index)
 	{
 		assert(index >= 0 && index < m_length);
 		return m_data[index];
@@ -47,7 +48,8 @@ public:
 	int getLength() const { return m_length; }
     void erase()
     {
-        delete[] m_data;
+        if(m_data)
+            delete[] m_data;
         // We need to make sure we set m_data to nullptr here, otherwise it will
         // be left pointing at deallocated memory!
         m_data = nullptr;
@@ -55,8 +57,10 @@ public:
     }
  
     // reallocate resizes the array.  Any existing elements will be destroyed.  This function operates quickly.
-    void reallocate(int newLength)
+    void reallocate(uint newLength)
     {
+        if(newLength == m_length)
+            return;
         // First we delete any existing elements
         erase();
  
@@ -70,7 +74,7 @@ public:
     }
  
     // resize resizes the array.  Any existing elements will be kept.  This function operates slowly.
-    void insertBefore(int value, int index)
+    void insertBefore(int value, uint index)
     {
         // Sanity check our index value
         assert(index >= 0 && index <= m_length);
@@ -79,14 +83,14 @@ public:
         int *data{ new int[m_length+1] };
  
         // Copy all of the elements up to the index
-        for (int before{ 0 }; before < index; ++before)
+        for (uint before{ 0 }; before < index; ++before)
             data[before] = m_data[before];
  
         // Insert our new element into the new array
         data [index] = value;
  
         // Copy all of the values after the inserted element
-        for (int after{ index }; after < m_length; ++after)
+        for (uint after{ index }; after < m_length; ++after)
             data[after+1] = m_data[after];
  
         // Finally, delete the old array, and use the new array instead
@@ -95,7 +99,7 @@ public:
         ++m_length;
     }
  
-    void remove(int index)
+    void remove(uint index)
     {
         // Sanity check our index value
         assert(index >= 0 && index < m_length);
@@ -111,11 +115,11 @@ public:
         int *data{ new int[m_length-1] };
  
         // Copy all of the elements up to the index
-        for (int before{ 0 }; before  < index; ++before)
+        for (uint before{ 0 }; before  < index; ++before)
             data[before] = m_data[before];
  
         // Copy all of the values after the removed element
-        for (int after{ index+1 }; after < m_length; ++after)
+        for (uint after{ index+1 }; after < m_length; ++after)
             data[after-1] = m_data[after];
  
         // Finally, delete the old array, and use the new array instead
@@ -130,7 +134,7 @@ public:
 
     IntArray& operator=(std::initializer_list<int> list){
         // assuer that the new list is the right size
-        if(static_cast<int>(list.size()) != m_length){
+        if(static_cast<uint>(list.size()) != m_length){
             reallocate(list.size());
         }
         int count {0};
@@ -145,14 +149,16 @@ public:
 int main()
 {
     	IntArray array { 5, 4, 3, 2, 1 }; // initializer list
-	for (int count{ 0 }; count < array.getLength(); ++count)
+    uint arrayLen = array.getLength();
+	for (int count{ 0 }; count < arrayLen; ++count)
 		std::cout << array[count] << ' ';
 
 	std::cout << '\n';
 
 	array = { 1, 3, 5, 7, 9, 11 };
+    arrayLen = array.getLength();
 
-	for (int count{ 0 }; count < array.getLength(); ++count)
+	for (int count{ 0 }; count < arrayLen; ++count)
 		std::cout << array[count] << ' ';
 
 	std::cout << '\n';

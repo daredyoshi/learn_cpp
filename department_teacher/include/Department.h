@@ -9,6 +9,8 @@
 
 class Department{
 private:
+    // For this one, I don't think you can have dynamic lists of references?
+    // Because references have to be initialized and cannot be reassigned.
     std::vector<std::reference_wrapper<Teacher>> m_teachers {}; 
 
 
@@ -23,12 +25,4 @@ public:
 };
 
 
-#endif /* ifndef DEPARTMENT_H
-
-#include "Teacher.h"
-
-class Department{
-private:
-    const Teacher& m_teacher
-}
- */
+#endif 

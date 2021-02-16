@@ -15,7 +15,7 @@ add_executable(shape ${SOURCES})
 
 # Set the output director for executables
 set_target_properties(shape PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${PROJECT_SOURCE_DIR}/bin/$<CONFIG>")
-target_compile_features(shape PUBLIC cxx_std_11)
+target_compile_features(shape PUBLIC cxx_std_17)
 
 # add compiler warning flags just when building this project
 # via the BUILD_INTERFACE generator expression

@@ -25,7 +25,7 @@ void Potion::drinkPotion(Player &player) const{
     };
 }
 
-std::string Potion::getSizeLabel() const{
+std::string_view Potion::getSizeLabel() const{
     switch(m_size){
         case 0:
             return "small";

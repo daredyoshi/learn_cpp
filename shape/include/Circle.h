@@ -1,6 +1,5 @@
 #ifndef CIRCLE_H
 #define CIRCLE_H
-#pragma once
 
 #include "Shape.h"
 #include "Point.h"
