@@ -5,12 +5,12 @@
 
 class Teacher{
 private:
-    std::string m_name {};
+    std::string_view m_name;
 public:
-    Teacher(const std::string& name)
+    Teacher(const std::string_view& name)
         : m_name{name} {}
 
-    const std::string& getName() const { return m_name; }
+    const std::string_view& getName() const { return m_name; }
 };
 
 

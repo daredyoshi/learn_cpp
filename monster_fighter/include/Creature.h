@@ -14,7 +14,7 @@ protected:
 
 public:
     Creature(std::string name, char symbol, int hp, int attack, int gold )
-        : m_name{name}, m_symbol{symbol}, m_hp{hp}, m_attack{attack}, m_gold{gold}{
+        : m_name{std::move(name)}, m_symbol{symbol}, m_hp{hp}, m_attack{attack}, m_gold{gold}{
 
     }
 
